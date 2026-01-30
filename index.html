@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playto Hero Section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .dot-pattern {
+            background-image: radial-gradient(#d1d5db 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        /* Custom shape for the logo 'o' */
+        .logo-o {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background-color: #3b82f6;
+            border-radius: 50%;
+            margin: 0 1px;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+        }
+    </style>
+</head>
+<body class="bg-white text-[#1F1F1F] overflow-x-hidden">
+
+    <!-- Top Bar -->
+    <div class="bg-[#F3F0E9] py-3 flex justify-center items-center text-sm text-[#475569] tracking-wide">
+        <span>Get 20% off <span class="font-serif italic text-base mx-1">Annual Memberships</span></span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-2 text-[#3b82f6]">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+        </svg>
+    </div>
+
+    <!-- Header / Logo -->
+    <header class="pt-12 pb-8 text-center">
+        <div class="text-4xl font-semibold tracking-tight mb-3 flex justify-center items-center">
+            <span>Playt</span><span class="logo-o"></span>
+        </div>
+        <p class="text-[#475569] text-lg">
+            The <span class="font-serif italic">all-in-one</span> mobile-first platform
+        </p>
+    </header>
+
+    <!-- Main Hero Content -->
+    <main class="relative max-w-[1200px] mx-auto px-6 lg:px-8 pt-8 pb-0">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            
+            <!-- Left Column: Text -->
+            <div class="flex flex-col justify-center lg:pr-12 pb-20 lg:pb-32 z-10">
+                <h1 class="font-serif text-[3.5rem] leading-[1.1] lg:text-[4.5rem] text-[#1F1F1F] mb-8">
+                    Your community,<br>
+                    your revenue.
+                </h1>
+                <p class="text-[#475569] text-lg leading-relaxed max-w-md mb-10">
+                    Playto turns community building into profit through mobile-first courses and monetization tools designed for modern creators.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button class="bg-[#3b82f6] hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-full transition-all">Get Started</button>
+                    <button class="bg-white border-2 border-[#475569] text-[#475569] hover:bg-gray-50 font-semibold py-3 px-8 rounded-full transition-all">Book Demo</button>
+                </div>
+            </div>
+
+            <!-- Right Column: Phone Mockup -->
+            <div class="relative flex justify-center lg:justify-end items-start h-full min-h-[600px]">
+                
+                <!-- Background Blobs -->
+                <div class="absolute top-20 right-[-20px] w-64 h-64 bg-[#EFEDE6] rounded-full mix-blend-multiply filter blur-sm opacity-80 z-0"></div>
+                <div class="absolute top-[300px] right-[180px] w-80 h-80 bg-[#EFEDE6] rounded-full mix-blend-multiply filter blur-sm opacity-80 z-0"></div>
+                <div class="absolute top-[400px] right-[-40px] w-72 h-72 bg-[#EFEDE6] rounded-full mix-blend-multiply filter blur-sm opacity-80 z-0"></div>
+
+                <!-- Phone Device -->
+                <div class="relative z-20 bg-white border-[10px] border-[#1C1C1E] rounded-[3rem] w-[320px] h-[660px] shadow-2xl overflow-hidden flex flex-col">
+                    
+                    <!-- Dynamic Island / Status Bar -->
+                    <div class="h-12 flex justify-between items-center px-6 pt-2">
+                        <span class="text-xs font-semibold">9:41</span>
+                        <div class="w-24 h-7 bg-[#1C1C1E] rounded-full absolute left-1/2 transform -translate-x-1/2 top-3"></div>
+                        <div class="flex gap-1.5 items-center">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V7h2v5z"/></svg>
+                            <div class="w-5 h-3 border border-gray-800 rounded-[2px] relative"><div class="absolute inset-0.5 bg-gray-800"></div></div>
+                        </div>
+                    </div>
+
+                    <!-- App Content -->
+                    <div class="flex-1 flex flex-col bg-white dot-pattern relative">
+                        <!-- App Header -->
+                        <div class="flex justify-between items-center px-6 py-4">
+                            <img src="https://placehold.co/40x40/3b82f6/ffffff?text=P" alt="Playto User" class="w-8 h-8 rounded-full border border-gray-200">
+                            <button class="flex items-center gap-1 bg-white border border-gray-200 rounded-full px-3 py-1 shadow-sm text-xs font-semibold">
+                                <span class="w-2 h-2 bg-[#3b82f6] rounded-full"></span>
+                                Playto
+                            </button>
+                        </div>
+
+                        <!-- Main Card -->
+                        <div class="mx-4 mt-20 bg-[#F2EFE8] rounded-[2rem] p-8 text-center relative overflow-hidden h-[340px] flex flex-col justify-center items-center shadow-sm">
+                            <!-- Decorative circles inside card -->
+                            <div class="absolute top-[-50px] left-[-50px] w-40 h-40 bg-white opacity-40 rounded-full blur-2xl"></div>
+                            
+                            <h2 class="font-serif text-3xl text-[#1F1F1F] mb-4 leading-tight">Launch your<br>membership</h2>
+                            <p class="text-[#475569] text-xs mb-8 max-w-[160px] mx-auto leading-relaxed">The easiest way to build and monetize your community.</p>
+                            
+                            <button class="bg-[#3b82f6] hover:bg-blue-600 text-white text-xs font-bold py-3 px-6 rounded-full flex items-center gap-1 transition-colors">
+                                Create Course
+                                <span class="text-base leading-none ml-1">+</span>
+                            </button>
+                        </div>
+
+                        <!-- Bottom Nav -->
+                        <div class="mt-auto border-t border-gray-100 bg-white pb-6 pt-3 px-8 flex justify-between items-end">
+                            <div class="flex flex-col items-center gap-1">
+                                <div class="w-5 h-5 bg-[#3b82f6] rounded-lg"></div>
+                                <span class="text-[10px] font-semibold text-[#3b82f6]">Home</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-1 opacity-40">
+                                <div class="flex items-end gap-0.5 h-5">
+                                    <div class="w-1 h-2 bg-[#475569] rounded-sm"></div>
+                                    <div class="w-1 h-4 bg-[#475569] rounded-sm"></div>
+                                    <div class="w-1 h-3 bg-[#475569] rounded-sm"></div>
+                                </div>
+                                <span class="text-[10px] font-medium text-[#475569]">Earnings</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-1 opacity-40">
+                                <div class="w-5 h-5 bg-[#475569] rounded-sm"></div>
+                                <span class="text-[10px] font-medium text-[#475569]">Members</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Home Indicator -->
+                        <div class="absolute bottom-1 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-[#475569] rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bottom Dark Section -->
+    <div class="bg-[#232323] w-full h-[280px] rounded-t-[3rem] lg:rounded-t-[4rem] mt-[-180px] relative z-0">
+        <!-- Floating Action Button -->
+        <div class="absolute bottom-6 right-6 lg:bottom-8 lg:right-12">
+            <div class="bg-white w-12 h-12 rounded-lg shadow-lg flex items-center justify-center cursor-pointer hover:bg-gray-50 transition-colors">
+                <img src="https://placehold.co/24x24/3b82f6/ffffff?text=P" alt="Playto" class="w-6 h-6">
+            </div>
+        </div>
+        <div class="flex justify-center items-center h-full pt-16">
+            <p class="text-gray-400 text-sm">© 2025 Playto. The future of building community.</p>
+        </div>
+    </div>
+
+</body>
+</html></html>
